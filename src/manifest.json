@@ -1,0 +1,25 @@
+{
+	"name": "Facebook Open Graph Data Manager",
+	"version": "0.0.1",
+	"manifest_version": 2,
+	"description": "Helps you manage your data in Facebook's Open Graph",
+	"minimum_chrome_version": "26",
+	"background": {
+		"scripts": ["/js/jquery-2.0.3.js", "/js/background.js"],
+		"persistent": true
+	},
+	"icons": {
+		"48": "/img/manager-48.png"
+	},
+	"page_action": {
+		"default_icon": {
+			"38": "/img/manager-38.png",
+			"19": "/img/manager-19.png"
+		},
+		"default_title": "Click to start process of removing Facebook comments"
+	},
+	"permissions": [
+		"tabs",
+		"https://www.facebook.com/*"
+	]
+}
